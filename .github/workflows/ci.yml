@@ -56,12 +56,12 @@ jobs:
         if: github.event_name == 'pull_request'
         run: ./gradlew clean detekt
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v1
-        if: github.event_name == 'pull_request'
-        with:
-          name: UnitTest-Artifact
-          path: 'app/build/reports/'
+#      - name: Upload Artifact
+#        uses: actions/upload-artifact@v1
+#        if: github.event_name == 'pull_request'
+#        with:
+#          name: UnitTest-Artifact
+#          path: 'app/build/reports/'
 
       - name: Report github
         if: github.event_name == 'pull_request'
