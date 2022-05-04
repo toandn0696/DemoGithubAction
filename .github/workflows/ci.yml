@@ -14,7 +14,6 @@ on:
 
 jobs:
   build:
-    if: startsWith(github.head_ref, 'feature/sprint') == false
     runs-on: ubuntu-latest
 
     steps:
